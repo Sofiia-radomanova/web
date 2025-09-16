@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Лабораторна робота 1</h1>
+    <h2>Робота з формами</h2>
+    <h2>Виконала Радоманова С.П.</h2>
+    <a href="index.html"> на головну</a>
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для введення інформації про виставу</p>
+    <ul>
+        <li>
+            дані про виставу, включають назву вистави, жанр(вибирається зі списку),
+            дата вистави, час вистави, опис вистави, картинку з афішою
+        </li>
+        <li>
+            дані про квиток, включають тип розміщення (вибирається зі списку,
+            наприклад, партер, ложа бенуар, балкон і т.п.), номер місця, вартість квитка
+        </li>
+    </ul>
+
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Вистава</legend>
+            <label>Назва вистави
+                <input id="show_name" type="text">
+            </label>
+            <label>Жанр 
+                <select>
+                    <option>Драматичні</option>
+                    <option>Музичні</option>
+                    <option>Лялькові</option>
+                </select>
+            </label>
+            <label>Дата вистави
+                <input id="show_date" type="date">
+            </label>
+            <label>Час вистави
+                <input id="show_time" type="time">
+            </label>
+            <br>
+            <label>Опис вистави 
+                <textarea rows="5" cols="50"></textarea>
+            </label>
+            <p>
+            <label>Афіша 
+                <select>
+                    <option><img src="img/афіша-2.jpg" alt="Драма" width="30%"></option>
+                    <option><img src="img/poster-309353424_1140043286888808_4875103526765070403_n_Gp2djT8.png.320x400_q85_crop.png" alt="Музична" width="30%"></option>
+                    <option><img src="img/cisafisha_144761592342_592552225ba1c.jpg" alt="Лялькова" width="30%"></option>
+                </select>
+            </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Квиток
+            </legend>
+            <label>Тип розміщення
+                <select>
+                    <option>Партер</option>
+                    <option>Ложа</option>
+                    <option>Бенуар</option>
+                    <option>Балкон</option>
+                </select>
+            </label>
+            <label> Номер місця
+                <input id="seat_number" type="number" min="1" max="200" step="1">
+            </label>
+            <Label>Ціна
+                <input id="price" type="number" min="0" >
+            </Label>
+        </fieldset>
+
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>
+
