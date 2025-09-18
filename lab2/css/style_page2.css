@@ -1,0 +1,32 @@
+@import url("style_page1.css");
+h3{
+    text-align: left;
+}
+
+span{
+    color: red;
+}
+
+img{
+    margin: 10px;
+}
+
+.p_brown_bold {
+    color: brown;
+    font-weight: bold;
+}
+
+.p_italic{
+    color:darkgreen;
+    font-style: italic;
+}
+
+.img_left{
+    float:left;
+    width: 30%;
+}
+
+.img_right{
+    float:right;
+    width: 30%;
+}

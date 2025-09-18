@@ -1,0 +1,26 @@
+body {
+    background-color:darkseagreen;
+    color:maroon; /*text*/
+}
+
+/*links*/
+a { 
+    color:darkslategrey;
+}
+
+hr {
+  background-color: darkgreen; /* колір самої лінії */
+  height: 3px;                 /* товщина лінії */
+  border: none;                /* прибрати стандартну рамку */
+}
+
+
+a:hover{
+    color:midnightblue;
+    front-weight:bold;
+    transition: color 2s;
+}
+
+h1, h2{
+    text-align: center;
+}
