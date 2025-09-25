@@ -1,0 +1,58 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(menu.css);
+@import url(header.css);
+@import url(sidebar.css);
+@import url(content.css);
+@import url(footer.css);
+@import url(middle.css);
+
+body{
+    margin:0;
+    max-width: var(--width);
+    background-color: var(--color-violet);
+}
+
+.container{
+    width:var(--width);
+    background-color: var(--color-violet);
+    color:var(--color-white);
+    font-family:var(--font-family-text);
+    font-size:var(--font-size-p);
+    min-height: 100vh;
+    display:flex;
+}
+
+.h2{
+    font-family:var(--font-family-h);
+    font-size:var(--font-size-h2);
+    color: var(--color-brown);
+    padding-top: 28px;
+    padding-left: 28px;
+    text-align: center;
+}
+
+.p {
+    font-family:var(--font-family-text);
+    font-size:var(--font-size-p);
+    color: var(--color-white);
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+
+a {
+  font-family:var(--font-family-text);  
+  color:var(--color-white);       
+  text-decoration: none; 
+}
+
+
+a:hover{
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    
+}

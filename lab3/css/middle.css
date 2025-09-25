@@ -1,0 +1,5 @@
+.middle {
+  display: flex;
+  min-height: 500px; 
+  margin-left: 100px;
+}

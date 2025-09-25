@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'KyivTypeSerif'; 
+  src: url("../fonts/KyivTypeSerif/Kyiv Type Serif/KyivTypeSerif-VarGX.ttf") format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KyivTypeTitlyng'; 
+  src: url("../fonts/KyivTypeTitling/KyivTypeTitling-VarGX.ttf") format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+    --color-violet:#7863F2;
+    --color-brown: #463A3A;
+    --color-white: #FFFFFF;
+
+    --font-family-h: "KyivTypeTitlyng";
+    --font-family-text: "KyivTypeSerif";
+    --font-size-h1: 48px;
+    --font-size-h2: 30px;
+    --font-size-p: 24px;
+    --font-size-menu: 30px;
+    --font-size-sidebar:24px;
+    
+    --width: 1440px;
+    --width-sidebar: 600px;
+    --width-main: 1000px;
+    --width-menu: 650px;
+    --heigth-header: 220px;
+    --width-footer: 468px;
+    --heigth-footer: 100px; 
+
+    --img:200px;
+
+    --padding-left: 120px;
+    --padding-text: 50px;
+}

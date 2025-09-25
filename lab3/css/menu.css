@@ -1,0 +1,9 @@
+.menu{
+    
+    width: var(--width-menu);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-menu);
+    color: var(--color-white);
+    padding: 40px;
+    
+}
