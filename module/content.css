@@ -1,0 +1,31 @@
+
+/*Контент (1,4)*/
+.content {
+  background-color:var(--back-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.content__img {
+    padding: 20px;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.content__body {
+  padding: 20px;
+}
+
+.content__title {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.content__text {
+  color: var(--gray-color);
+   font-size: 1.3rem;
+}

@@ -1,0 +1,28 @@
+
+/*хедер(3) */
+.header {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header__title {
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.header__subtitle {
+  color: var(--gray-color);
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+.header__logo {
+  width: 80px;         
+  height: auto;        
+  object-fit: cover;   
+}
+

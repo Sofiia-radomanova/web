@@ -1,0 +1,19 @@
+/*Соцмережі (5)*/
+.social {
+  background-color:var(--back-color);
+  padding: 20px 0;
+}
+
+.social__title {
+  color: var(--accent-color);
+}
+
+.social__link {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social__link:hover {
+  color: var(--accent-color);
+}

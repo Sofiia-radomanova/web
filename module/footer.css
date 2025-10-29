@@ -1,0 +1,8 @@
+/*Футер(6)*/
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--gray-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,47 @@
+@import url(menu.css);
+@import url(header.css);
+@import url(content.css);
+@import url(social.css);
+@import url(footer.css);
+
+body.page {
+  
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+
+/*адаптивність*/
+@media (max-width: 992px) {
+  .menu {
+    min-height: auto;
+    flex-direction: row;
+  }
+
+  .menu__item {
+    margin: 0 5px;
+  }
+  
+
+  .menu__link {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 1.8rem;
+  }
+
+  .content__img {
+    height: 180px;
+  }
+
+  .menu__link{
+    font-size: 0.9rem;
+  }
+
+  .content__text {
+    font-size: 0.9rem;
+  }
+}
