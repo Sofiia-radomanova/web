@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 7. JavaScript</title>
+    <link type="text/css" rel="stylesheet" href="1.css">
+    <link type="text/css" rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <main class="b-main">
+        <header class="b-header">
+            <h1>Лабораторна робота 6. JavaScript</h1>
+            <h2>Радоманова Софія АнД-31</h2>
+        </header>
+        <ul class="main-menu">
+            <li><a href="index.html">Лабораторна робота 1</a></li>
+            <li><a href="lab7.html">Лабораторна робота 2</a></li>
+            <li><a href="">Лабораторна робота 3</a></li>
+            <li><a href="">Лабораторна робота 4</a></li>
+        </ul>
+        <h2>Завдання на лабораторну роботу</h2>
+        <div class="b-div-task">
+            1.На сторінці є список з переліком країн, перетворіть список на рядок де
+            країни розділені комою.
+        </div>
+        <section class="task">
+        <h3>Завдання 1. Список країн</h3>
+        <ul id="country-list">
+            <li>Україна</li>
+            <li>Польща</li>
+            <li>Німеччина</li>
+            <li>Франція</li>
+            <li>Італія</li>
+        </ul>
+        <button class="b-button" onclick="convertCountries()">Перетворити список у рядок</button>
+        <p id="countries-result"></p>
+        </section>
+
+        <div class="b-div-task">
+            2.Дана таблиця з числами. При натисканні на комірку, якщо значення
+            в ній від’ємне, то в ній з`являється поле введення з вмістом цієї комірки і
+            кнопка “зберегти”. Можна редагувати числа в полі та зберегти - і число в
+            комірці зміниться на те, що був в полі введення, але лише в тому випадку якщо
+            воно додатнє.
+        </div>
+        <section class="task">
+            <h3>Завдання 2. Редагування таблиці чисел</h3>
+            <table id="numbers-table" border="1" cellpadding="10">
+                <tr>
+                    <td>12</td>
+                    <td>-5</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>-9</td>
+                    <td>4</td>
+                    <td>-2</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>-3</td>
+                    <td>15</td>
+                </tr>
+            </table>
+        </section>
+        
+        <div id="result"></div>
+        
+    </main>
+    <script src="2_lab_tasks.js"></script>
+
+</body>
+</html>
