@@ -23,13 +23,13 @@ function makeTableEditable() {
     // Знаходимо всі клітинки таблиці
     var cells = document.querySelectorAll("#numbers-table td");
 
-    // Проходимось по кожній клітинці
+    //проходимось по кожній клітинці
     for (var i = 0; i < cells.length; i++) {
         cells[i].addEventListener("click", function () {
             var cell = this; // зберігаємо посилання на натиснуту клітинку
             var value = parseFloat(cell.textContent); // зчитуємо її значення
 
-            // Якщо число невід’ємне або вже є input — нічого не робимо
+            // Якщо число невід’ємне або вже є input  нічого не робимо
             if (value >= 0 || cell.querySelector("input")) {
                 return;
             }

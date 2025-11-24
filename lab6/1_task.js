@@ -9,6 +9,9 @@ arrBooks[0] = {
     TakenDate: new Date(2025, 9, 15)
 };
 
+
+
+
 arrBooks[1] = {
     Name: "Майстер і Маргарита",
     Author: "Михайло Булгаков",
@@ -25,6 +28,14 @@ arrBooks[2] = {
     TakenDate: new Date(2025, 9, 20)
 };
 
+arrBooks[3] = {
+    Name: "Перетворення1",
+    Author: "Франц Кафка",
+    Genre: "Новела",
+    Pages: 120,
+    TakenDate: new Date(2025, 9, 15)
+};
+
 //Функцвя для розрахунку кількості днів до повернення
 function daysLeft(takenDate) {
     const returnDate = new Date(takenDate);
@@ -34,6 +45,7 @@ function daysLeft(takenDate) {
     return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 }
 
+let i = 0;
 //Функція, яка формує рядок виводу для одного запису
 function makeBookRow(book) {
     const left = daysLeft(book.TakenDate);
@@ -45,8 +57,10 @@ function makeBookRow(book) {
         border-radius:8px;
         border:1px solid;`;
 
+        
     //кольори залежно від терміну
     if (left < 0) {
+        i++
         result += `background-color:#ffebee; border-color:#c62828;">`;
     } else {
         result += `background-color:#e8f5e9; border-color:#2e7d32;">`;
@@ -58,8 +72,10 @@ function makeBookRow(book) {
         Днів до повернення: <b>${left >= 0 ? left : "прострочено на " + Math.abs(left)}</b>
     </div>`;
 
+    
     return result;
 }
+
 
 
 function showBooks() {
@@ -71,7 +87,8 @@ function showBooks() {
         output = output + makeBookRow(book);
     });
 
-    // знаходимо елемент із id="result" у HTML і вставляємо туди всі книги
+    console.log(i);
+    // знаходимо елемент із id result у HTML і вставляємо туди всі книги
     document.getElementById("result").innerHTML = output;
 }
 
