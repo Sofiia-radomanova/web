@@ -1,0 +1,34 @@
+<div>
+    <h2>Завдання</h2>
+    <div class="b-div-task">
+        Базовий клас: <b>Автобус</b> <br>
+        Нащадок: <b>Швидкий автобус</b>
+    </div>
+
+    <h2>Введіть свої дані</h2>
+    <div class="b-div-task">
+        <div class="form-group">
+            <label>Кількість пасажирів:</label>
+            <input type="number" [(ngModel)]="passengers" min="0">
+        </div>
+
+        <div class="form-group">
+            <label>Ціна квитка (грн):</label>
+            <input type="number" [(ngModel)]="price" min="0">
+        </div>
+
+        <div class="form-group">
+            <label>Швидкість (км/год):</label>
+            <input type="number" [(ngModel)]="speed" min="0">
+        </div>
+
+        <div class="form-group">
+            <label>Марка:</label>
+            <input type="text" [(ngModel)]="brand">
+        </div>
+    </div>
+
+    <button class="b-button" (click)="calculate()">Порахувати</button>
+
+    <div class="result" [innerHTML]="resultOutput"></div>
+</div>

@@ -1,0 +1,71 @@
+/* Заголовки всередині компонента */
+h2 {
+    font-size: 1.4rem;
+    color: #512da8;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Блок завдання та форми */
+.b-div-task {
+    background: #f8f9fa;
+    padding: 20px 25px;
+    border-left: 5px solid #512da8;
+    border-radius: 10px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 1.1rem; /* Трохи зменшив, щоб влазило */
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Щоб padding не ламав ширину */
+}
+
+/* Кнопка */
+.b-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 28px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.b-button:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(25, 118, 210, 0.3);
+}
+
+/* Результат */
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    
+    border-radius: 10px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .b-div-task {
+        font-size: 0.95rem;
+        padding: 15px 18px;
+    }
+    .b-button {
+        width: 100%;
+    }
+}
